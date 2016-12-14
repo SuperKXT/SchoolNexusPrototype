@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>School Nexus</title>
+    <link rel="shortcut icon" type="image/png" href="~/Images/fav.png" />
+    <link rel="stylesheet" href="~/Content/main.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <img src="~/Images/logo_horizontal.png" alt="School Nexus" class="header-logo" />
+        <span id="searchBar" class="header-search">
+            <input type="text" class="search-text" placeholder="Search"/>
+            <span id="searchCancel" class="search-cancel" hidden><img src="~/Images/cancel.png"/></span>
+        </span>
+        <div id="headerRight" class="header-right">
+            <span id="aboutMe" class="about-button"></span>
+            <span id="userArea" class="user-area">User Log In</span>
+        </div>
+    </header>
+    <aside id="sideBar" class="side-bar">
+        <ul id="sideBarList" class="side-bar-list">
+            <li id="home"class="list-item">
+                <span class="list-icon home"></span>
+                <span class="list-text">Home</span>
+            </li>
+        </ul>
+    </aside>
+    <section id="mainArea" class="main-area">
+        <section id="indexMain" class="index-main">
+            @RenderBody()
+        </section>
+        <section id="studentMain" class="student-main" hidden>
+
+        </section>
+        <section id="attendanceMain" class="teacher-main" hidden>
+
+        </section>
+        <section id="feeMain" class="index-main" hidden>
+
+        </section>
+        <section id="userMain" class="user-main" hidden>
+
+        </section>
+    </section>
+</body>
+</html>

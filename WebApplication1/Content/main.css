@@ -1,0 +1,117 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Open Sans';
+}
+
+.header {
+    display: block;
+    width: 80%;
+    height: 60px;
+    background-color: #006633;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    margin-left: 10px;
+    height: 40px;
+}
+
+.header-search {
+    height: 40px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    width: 40%;
+
+}
+
+.search-text {
+    background-image: url("../Images/search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0 10px 0 45px;
+    background-color: #52BF89;
+    border: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+}
+.search-text:hover {
+    background-color: #76CC93;
+}
+
+.search-cancel {
+    background-color: #87E8AC;
+    height: 100%;
+    position: relative;
+    top:-40px;
+    left:0;
+    width: 40px;
+    cursor: pointer;
+}
+.search-cancel:hover {
+    background-color: #9AFCC0;
+}
+.search-cancel > img {
+    height: 100%;
+}
+
+.header-right {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right:0;
+    margin-right: 40px;
+}
+
+.about-button, .user-area {
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+.about-button:hover, .user-area:hover {
+    background-color: #52BF89;
+}
+
+.side-bar {
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: #777777;
+    position: absolute;
+}
+
+.main-area {
+    display: block;
+    width: 80%;
+    height: calc(100% - 60px);
+    background-color: lightgrey;
+    position: absolute;
+    left: 20%;
+    top: 60px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.main-area h2 {
+    font-weight: 600;
+}
+
+.main-area p {
+    line-height: 150%;
+}
